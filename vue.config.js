@@ -3,10 +3,11 @@ module.exports = {
     resolve: {
       // 配置别名
       alias: {
-        assets: '@/assets',
-        common: '@/common',
-        network: '@/network',
-        views: '@/view'
+        'assets': '@/assets',
+        'components': '@/components',
+        'views': '@/views',
+        'common': '@/common',
+        'network': '@/network'
       }
     }
   }
