@@ -6,6 +6,9 @@ import store from '@/store'
 // 解决移动端300ms延迟
 import FastClick from 'fastclick'
 
+// 图片懒加载
+import VueLazyload from 'vue-lazyload'
+
 import toast from '@/components/common/toast'
 
 Vue.config.productionTip = false
@@ -17,6 +20,9 @@ Vue.prototype.$bus = new Vue()
 Vue.use(toast)
 
 FastClick.attach(document.body)
+
+Vue.use(VueLazyload)
+
 new Vue({
   router,
   store,
